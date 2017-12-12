@@ -19,24 +19,11 @@ float euclideanDistance(RgbPixel* p, Centroid* c1) {
 	r = 0;
 	double r_tmp;
 
-	/*
-	double dataIn[6];
-	dataIn[0] = p->r;
-	dataIn[1] = p->g;
-	dataIn[2] = p->b;
-	dataIn[3] = c1->r;
-	dataIn[4] = c1->g;
-	dataIn[5] = c1->b;
-	*/
-	//#pragma parrot(input, "kmeans", [6]dataIn)
-
 	r += (p->r - c1->r) * (p->r - c1->r);
 	r += (p->g - c1->g) * (p->g - c1->g);
 	r += (p->b - c1->b) * (p->b - c1->b);
 
 	r_tmp = sqrt(r);
-
-	//#pragma parrot(output, "kmeans", <0.0; 1.0>r_tmp)
 
 	return r_tmp;
 }
