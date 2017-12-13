@@ -17,7 +17,7 @@ None
 $ make
 
 2. Reduce the number of colors of an image using kmeans clustering
-$ ./kmeans ./kmeans data/input/1.rgb 1_out.rgb
+$ ./kmeans data/input/1.rgb 1_out.rgb
 
 3. Convert the resulting .rgb into a visible image
 $ ./rgb2png 1_out.rgb 1_out.png
